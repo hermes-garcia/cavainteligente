@@ -1,0 +1,39 @@
+.page-wrapper {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.wrapper-page {
+  max-width: 80%;
+  margin: 5% auto 0;
+}
+
+.ex-page-content .text-error {
+  color: #252932;
+  font-size: 98px;
+  font-weight: 700;
+  line-height: 150px;
+}
+
+.ex-page-content .text-error i {
+  font-size: 90px;
+  vertical-align: middle;
+}
+
+.text-primary {
+  color: #5d9cec;
+}
+
+.text-pink {
+  color: #fb6d9d;
+}
+
+.text-info {
+  color: #34d3eb;
+}
+
+.text-muted {
+  color: #98a6ad;
+}
+
+/*# sourceMappingURL=pages.min.css.map */

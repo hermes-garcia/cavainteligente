@@ -1,0 +1,17 @@
+---
+deployment:
+    tasks:
+    - export DEPLOYPATH=/home3/cavainteligente/public_html/
+    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp page-400.html $DEPLOYPATH
+    - /bin/cp page-403.html $DEPLOYPATH
+    - /bin/cp page-404.html $DEPLOYPATH
+    - /bin/cp page-500.html $DEPLOYPATH
+    - /bin/cp page-503.html $DEPLOYPATH
+    - /bin/cp sitemap_index.xml $DEPLOYPATH
+    - /bin/cp robots.txt $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
+    - /bin/cp -R /home3/cavainteligente/repositories/cavainteligente/assets $DEPLOYPATH
+    - /bin/cp -R /home3/cavainteligente/repositories/cavainteligente/contactform $DEPLOYPATH
+    - /bin/cp -R /home3/cavainteligente/repositories/cavainteligente/connection $DEPLOYPATH
+    - /bin/cp -R /home3/cavainteligente/repositories/cavainteligente/subscription $DEPLOYPATH

@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: assets/
+Disallow: connection/
+Disallow: contactform/
+Disallow: subscription/
+Sitemap: https://cavainteligente.com/sitemap_index.xml
