@@ -181,6 +181,7 @@ header {
 
 		img {
 			max-height: 40px;
+			width: auto;
 		}
 
 		span {
@@ -763,6 +764,7 @@ section {
 			margin-top: 0.5rem;
 			margin-bottom: 0.5rem;
 			width: 50%;
+			height: auto;
 			border-radius: 5px;
 		}
 
@@ -902,6 +904,7 @@ section {
 
 		img {
 			width: 100%;
+			height: auto;
 			border-radius: 1rem;
 
 			@include md {
