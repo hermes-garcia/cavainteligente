@@ -26,6 +26,7 @@ jobs:
             cp robots.txt $DEPLOYPATH
             cp sitemap_index.xml $DEPLOYPATH
             cp .htaccess $DEPLOYPATH
+            cp composer* $DEPLOYPATH
             cp -R assets/ $DEPLOYPATH
             cp -R contactform/ $DEPLOYPATH
             cp -R subscription/ $DEPLOYPATH
