@@ -1,0 +1,32 @@
+name: DO Deploy
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Copy files
+        uses: appleboy/ssh-action@master
+        env:
+          DEPLOYPATH: "/var/www/cavainteligente.com/public_html/"
+        with:
+          host: ${{secrets.SSH_HOST}}
+          key: ${{secrets.SSH_KEY}}
+          username: ${{secrets.SSH_USERNAME}}
+          envs: DEPLOYPATH
+          script: |
+            cd repositories/cavainteligente
+            git pull origin
+            echo "Update repo"
+            echo "$DEPLOYPATH"
+            cp *.html $DEPLOYPATH
+            cp robots.txt $DEPLOYPATH
+            cp sitemap_index.xml $DEPLOYPATH
+            cp .htaccess $DEPLOYPATH
+            cp -R assets/ $DEPLOYPATH
+            cp -R connection/ $DEPLOYPATH
+            cp -R contactform/ $DEPLOYPATH
+            cp -R subscription/ $DEPLOYPATH
