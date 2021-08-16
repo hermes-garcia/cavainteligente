@@ -27,6 +27,5 @@ jobs:
             cp sitemap_index.xml $DEPLOYPATH
             cp .htaccess $DEPLOYPATH
             cp -R assets/ $DEPLOYPATH
-            cp -R connection/ $DEPLOYPATH
             cp -R contactform/ $DEPLOYPATH
             cp -R subscription/ $DEPLOYPATH
